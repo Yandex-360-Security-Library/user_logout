@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "user-logout"
+version = "1.0.0"
+description = "Performs the user's logout from his Yandex 360 account using his username in the organization."
+authors = ["Anton Bryushinin <anton.bryushinin@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "2.31.0"
+types-requests = "2.31.0.20240311"
+
+[tool.poetry.dev-dependencies]
+black = "24.3.0"
+flake8 = "7.0.0"
+isort = "5.13.2"
+mypy = "1.9.0"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
